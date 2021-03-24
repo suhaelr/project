@@ -8,7 +8,7 @@ Public Class Kehadiran
     Dim cmdInsert As New OleDbCommand
     Dim cmdUpdate As New OleDbCommand
     Dim cmdDelete As New OleDbCommand
-    Dim strConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source = Akademik.accdb"
+    Dim strConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source = NAMA_DB_MU.accdb"
     Public ADP As OleDbDataAdapter
     Public DS As New DataSet
 
@@ -108,8 +108,7 @@ Public Class Kehadiran
         TextBox8.Text = CType(Alpa, String)
     End Sub
 
-
-    Private Sub TextBox2_TextChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TextBox2.TextChanged
+     Private Sub TextBox2_TextChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TextBox2.TextChanged
         ListBox1.Location = New Point(TextBox2.Location.X, TextBox2.Location.Y + 20)
         ListBox1.BringToFront()
         ListBox1.Visible = True
@@ -205,7 +204,4 @@ Public Class Kehadiran
         ButtonEnable()
         ListBox1.Visible = False
     End Sub
-
-
-
 End Class
