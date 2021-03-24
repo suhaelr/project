@@ -18,7 +18,6 @@ Public Class Kehadiran
         TampilData()
         ListBox1.Visible = False
         ButtonEnable()
-
     End Sub
 
     Sub TampilData()
